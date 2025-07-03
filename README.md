@@ -18,3 +18,6 @@ When a task is submitted:
 
 ## Default ThreadPoolTaskExecutor Configurations
 ![Default ThreadPoolTaskExecutor Configurations](src/main/resources/default-configs.png)
+
+## Overridden ThreadPoolTaskExecutor Configurations
+![Overridden ThreadPoolTaskExecutor Configurations](src/main/resources/overridden-configs.png)

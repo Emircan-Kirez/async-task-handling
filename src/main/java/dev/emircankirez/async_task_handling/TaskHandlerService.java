@@ -2,6 +2,7 @@ package dev.emircankirez.async_task_handling;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,8 @@ public class TaskHandlerService {
     Logger logger = LoggerFactory.getLogger(TaskHandlerService.class);
     private final Executor executor;
 
-    public TaskHandlerService(Executor executor) {
+    // it's not mandatory to use @Qualifier because there is only one executor bean defined
+    public TaskHandlerService(@Qualifier("myTaskExecutor") Executor executor) {
         this.executor = executor;
     }
 
