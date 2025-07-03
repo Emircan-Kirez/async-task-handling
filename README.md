@@ -15,3 +15,6 @@ When a task is submitted:
 
 - A **large queueCapacity** delays the need to create new threads.
 - A **small queueCapacity** causes the pool to reach `maxPoolSize` more quickly.
+
+## Default ThreadPoolTaskExecutor Configurations
+![Default ThreadPoolTaskExecutor Configurations](src/main/resources/default-configs.png)
